@@ -8,7 +8,7 @@ public void displayWelcomeScreen()
 	System.out.println("***************************************");
 	System.out.println("      Lockers Private Limited          ");
 	System.out.println("***************************************");
-	System.out.println("Developer Name-Madan Mohan Challa");
+	System.out.println("Developer Name - Madan Mohan Challa");
 	System.out.println("***************************************");
 	System.out.println("");
 
@@ -22,6 +22,9 @@ void welcome()
 	SearchFile sf = new SearchFile();
 	ListFile lf = new ListFile();
 	
+	System.out.println("***************************************");
+	System.out.println("          Enter your Choice");
+	System.out.println("***************************************");
 	System.out.println("1. List File");
 	System.out.println("2. Add File");
 	System.out.println("3. Delete File");
@@ -54,7 +57,7 @@ void welcome()
 		case "5":
 		{
 			System.out.println("Application Exit");
-			break;
+			System.exit(0);
 		}
 		default:
 		{

@@ -12,11 +12,11 @@ public class SearchFile {
 		String directory="";
 		File f=new File(directory+filename);
 		if (f.exists()) {
-			System.out.println("File exists");
+			System.out.println("Entered File Name exists");
 		}
 		else
 		{
-			System.out.println("File does'nt exists");
+			System.out.println("Entered File Name does'nt exists");
 		}
 	}
 

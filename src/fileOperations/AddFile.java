@@ -8,11 +8,9 @@ public class AddFile {
 	void addfiletodirectory()
 	{
 		System.out.println("Enter the FileName :");
-		@SuppressWarnings("resource")
 		Scanner reader = new Scanner(System.in);
 		String filename = reader.nextLine();
 		String directory = System.getProperty("user.dir");
-		Boolean error1 = false;
 		
 		File f = new File(directory+"\\"+filename);
 		if (f.exists())

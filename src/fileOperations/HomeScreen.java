@@ -9,6 +9,7 @@ public void displayWelcomeScreen()
 	System.out.println("      Lockers Private Limited          ");
 	System.out.println("***************************************");
 	System.out.println("Developer Name-Madan Mohan Challa");
+	System.out.println("***************************************");
 	System.out.println("");
 
 	
@@ -21,31 +22,31 @@ void welcome()
 	SearchFile sf = new SearchFile();
 	ListFile lf = new ListFile();
 	
-	System.out.println("1. Add File");
-	System.out.println("2. Delete File");
-	System.out.println("3. Search File");
-	System.out.println("4. List File");
+	System.out.println("1. List File");
+	System.out.println("2. Add File");
+	System.out.println("3. Delete File");
+	System.out.println("4. Search File");
 	System.out.println("5. Exit");
 
 	Scanner scanner = new Scanner(System.in);
 	String choice = scanner.nextLine();
 	switch (choice) {
-		case "1":
+		case "2":
 		{
 			af.addfiletodirectory();
 			welcome();
 		}
-		case "2":
+		case "3":
 		{
 			df.deletefromrepository();
 			welcome();
 		}
-		case "3":
+		case "4":
 		{
 			sf.searchfileinrepository();
 			welcome();
 		}
-		case "4":
+		case "1":
 		{
 			lf.findallfilesrepo();
 			welcome();
@@ -71,6 +72,7 @@ void welcome()
 		HomeScreen HS = new HomeScreen();
 		HS.displayWelcomeScreen();
 		HS.welcome();
+		
 	}
 }
 
